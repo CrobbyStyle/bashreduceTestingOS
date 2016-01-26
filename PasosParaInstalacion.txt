@@ -1,0 +1,10 @@
+Pasos para la instalacion de bashreduce en ubuntu 14.04 LTS
+Descargar los archivos de bashreduce:
+-> https://github.com/rcrowley/bashreduce
+Ingresar a la carpeta brutils por linea de comando
+Ejecutar:
+-> make
+Ejecutar:
+-> sudo make install
+Ir una carpeta hacia atras y ejecutar:
+./br
