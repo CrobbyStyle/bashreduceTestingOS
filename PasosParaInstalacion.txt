@@ -8,3 +8,15 @@ Ejecutar:
 -> sudo make install
 Ir una carpeta hacia atras y ejecutar:
 ./br
+
+Para solucionar problemas con el nescape se debe instalar el netscape6
+Una vez descomprimido se deben ejecutar los siguientes comandos:
+-> ./configure
+-> make
+-> sudo make install
+
+Por último localizar el archivo br de su carpeta de bashreduce y editar lo siguiente:
+-> Cambiar "nc" por "nc6"
+
+Guardar y ejecutar:
+-> ./br
