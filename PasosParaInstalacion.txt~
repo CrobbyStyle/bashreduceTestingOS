@@ -23,7 +23,6 @@ Agregar ssh sin password:
 -->ssh-copy-id user@localhost (continue con yes)
 -->eval "$(ssh-agent -s)"
 -->ssh-add
--->ssh hirobreak@localhost (si no pide contrasenia, esta listo)
 
 Guardar y ejecutar:
 -> ./br
