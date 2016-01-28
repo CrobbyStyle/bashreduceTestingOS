@@ -4,18 +4,25 @@ import re
 
 numeros = 0
 temp = 0
-frase = ""
+nuevalinea = ""
 
-for linea in sys.stdin:
-	
-	for char in linea:
-		if char != ":" and char != "\"":
-			if char.isdigit():
-				numeros = numeros + int(char)
-			else:
+try:
+	for linea in sys.stdin:
+		nuevalinea = ""
+		for char in linea:
+			if char != ":" and char != "\"" and char !="\\/" and char !="#":
 				temp = ord(char) + 3
 				char = chr(temp)
-				frase = frase + char
-
-	print frase
-
+				nuevalinea = nuevalinea + char
+		print nuevalinea
+except IOError:
+    # stdout is closed, no point in continuing
+    # Attempt to close them explicitly to prevent cleanup problems:
+    try:
+        sys.stdout.close()
+    except IOError:
+        pass
+    try:
+        sys.stderr.close()
+    except IOError:
+        pass
