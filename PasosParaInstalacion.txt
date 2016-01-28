@@ -27,3 +27,8 @@ Agregar ssh sin password:
 
 Guardar y ejecutar:
 -> ./br
+
+Usando archivos de python se pueden obtener salidas vacias, debido a la falta de permisos
+Para solucionar esto, se debe ejecutar el siguiente comando:
+
+-> chmod 777 "script.py"
