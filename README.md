@@ -30,5 +30,16 @@ Líneas de comando para la ejecución de upperANDlower.py:
 
 	time ./br -h "localhost localhost" -m /home/crobby/bashreduce-rcrowley/upperANDlower.py -i /home/crobby/bashreduce-rcrowley/PostHistory.xml -o /home/crobby/bashreduce-rcrowley/salida3.txt
 
+Líneas de comando para la ejecución de encrypt.py:
 
+	1 Núcleo
 
+	 time ./br -r /home/ray/bashreduce/encrypt.py -i /home/ray/bashreduce/datasets/PostHistory.xml -o salida1core.txt -m "localhost"
+	
+	2 Núcleos
+
+	 time ./br -r /home/ray/bashreduce/encrypt.py -i /home/ray/bashreduce/datasets/PostHistory.xml -o salida1core.txt -m "localhost localhost"
+
+	4 Núcleos
+
+	 time ./br -r /home/ray/bashreduce/encrypt.py -i /home/ray/bashreduce/datasets/PostHistory.xml -o salida1core.txt -m "localhost localhost localhost localhost"
